@@ -1,0 +1,1453 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <style>
+    .state-data {
+      display: none;
+    }
+  </style>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <select class="size" id="state-selector" onchange="" style = "font-size: 30px; position: fixed">
+    <option value="">Select a state</option>
+    <option value="Alabama">Alabama</option>
+    <option value="Alaska">Alaska</option>
+    <option value="Arizona">Arizona</option>
+    <option value="Arkansas">Arkansas</option>
+    <option value="California">California</option>
+    <option value="Colorado">Colorado</option>
+    <option value="Connecticut">Connecticut</option>
+    <option value="Delaware">Delaware</option>
+    <option value="Florida">Florida</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Hawaii">Hawaii</option>
+    <option value="Idaho">Idaho</option>
+    <option value="Illinois">Illinois</option>
+    <option value="Indiana">Indiana</option>
+    <option value="Iowa">Iowa</option>
+    <option value="Kansas">Kansas</option>
+    <option value="Kentucky">Kentucky</option>
+    <option value="Louisiana">Louisiana</option>
+    <option value="Maine">Maine</option>
+    <option value="Maryland">Maryland</option>
+    <option value="Massachusetts">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MN">Minnesota</option>
+    <option value="Mississippi">Mississippi</option>
+    <option value="Missouri">Missouri</option>
+    <option value="Montana">Montana</option>
+    <option value="Nebraska">Nebraska</option>
+    <option value="Nevada">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NJ">New Jersey</option>
+    <option value="NM">New Mexico</option>
+    <option value="NY">New York</option>
+    <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="Ohio">Ohio</option>
+    <option value="Oklahoma">Oklahoma</option>
+    <option value="Oregon">Oregon</option>
+    <option value="Pennsylvania">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="Tennessee">Tennessee</option>
+    <option value="Texas">Texas</option>
+    <option value="Utah">Utah</option>
+    <option value="Vermont">Vermont</option>
+    <option value="Virginia">Virginia</option>
+    <option value="Washington">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="Wisconsin">Wisconsin</option>
+    <option value="Wyoming">Wyoming</option>
+  </select>
+</div>
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">CoronaVirus Updates</h1>
+    <p>This is a webiste devoted to providing you the most up to date information on the Coronavirus's spread. Data is formatted by each state, so please CLICK on tab ABOVE!!!</p>
+    <div class="state-data" id="state-data-alabama">
+      <table>
+      <h2>AL</h2>
+      <tr>
+        <th>date</th>
+        <th>positive</th>
+        <th>negative</th>
+        <th>hospitalized</th>
+        <th>death</th>
+        <th>total</th>
+        <th>hospitalizedIncrease</th>
+      </tr>
+      <tr>
+      <td>20200331</td>
+      <td>981</td>
+        <td>6298</td>
+        <td>null</td>
+        <td>13</td>
+        <td>7279</td>
+        <td>0</td>
+      </tr>
+    </table>
+      </div>
+      <div class="state-data" id="state-data-alaska">
+        <table>
+        <h2>AK</h2>
+        <tr>
+          <th>date</th>
+          <th>positive</th>
+          <th>negative</th>
+          <th>hospitalized</th>
+          <th>death</th>
+          <th>total</th>
+          <th>hospitalizedIncrease</th>
+        </tr>
+        <tr>
+        <td>20200331</td>
+        <td>119</td>
+          <td>3594</td>
+          <td>7</td>
+          <td>3</td>
+          <td>3713</td>
+          <td>0</td>
+        </tr>
+    </table>
+        </div>
+      <div class="state-data" id="state-data-arkansas">
+          <table>
+          <h2>AR</h2>
+          <tr>
+            <th>date</th>
+            <th>positive</th>
+            <th>negative</th>
+            <th>hospitalized</th>
+            <th>death</th>
+            <th>total</th>
+            <th>hospitalizedIncrease</th>
+          </tr>
+          <tr>
+          <td>20200331</td>
+          <td>523</td>
+            <td>5959</td>
+            <td>64</td>
+            <td>8</td>
+            <td>6482</td>
+            <td>2</td>
+          </tr>
+        </table>
+          </div>
+          <div class="state-data" id="state-data-arizona">
+            <table>
+            <h2>AZ</h2>
+            <tr>
+              <th>date</th>
+              <th>positive</th>
+              <th>negative</th>
+              <th>hospitalized</th>
+              <th>death</th>
+              <th>total</th>
+              <th>hospitalizedIncrease</th>
+            </tr>
+            <tr>
+            <td>20200331</td>
+            <td>1289</td>
+              <td>18082</td>
+              <td>78</td>
+              <td>24</td>
+              <td>19371</td>
+              <td>0</td>
+            </tr>
+          </table>
+            </div>
+            <div class="state-data" id="state-data-california">
+              <table>
+              <h2>CA</h2>
+              <tr>
+                <th>date</th>
+                <th>positive</th>
+                <th>negative</th>
+                <th>hospitalized</th>
+                <th>death</th>
+                <th>total</th>
+                <th>hospitalizedIncrease</th>
+              </tr>
+              <tr>
+              <td>20200331</td>
+              <td>7482</td>
+                <td>21772</td>
+                <td>1617</td>
+                <td>153</td>
+                <td>86654</td>
+                <td>185</td>
+              </tr>
+            </table>
+              </div>
+              <div class="state-data" id="state-data-colorado">
+                <table>
+                <h2>CO</h2>
+                <tr>
+                  <th>date</th>
+                  <th>positive</th>
+                  <th>negative</th>
+                  <th>hospitalized</th>
+                  <th>death</th>
+                  <th>total</th>
+                  <th>hospitalizedIncrease</th>
+                </tr>
+                <tr>
+                <td>20200331</td>
+                <td>2627</td>
+                  <td>12737</td>
+                  <td>414</td>
+                  <td>51</td>
+                  <td>15364</td>
+                  <td>0</td>
+                </tr>
+              </table>
+                </div>
+
+                <div class="state-data" id="state-data-connecticut">
+                  <table>
+                  <h2>CT</h2>
+                  <tr>
+                    <th>date</th>
+                    <th>positive</th>
+                    <th>negative</th>
+                    <th>hospitalized</th>
+                    <th>death</th>
+                    <th>total</th>
+                    <th>hospitalizedIncrease</th>
+                  </tr>
+                  <tr>
+                  <td>20200331</td>
+                  <td>3128</td>
+                    <td>13029</td>
+                    <td>608</td>
+                    <td>69</td>
+                    <td>16157</td>
+                    <td>91</td>
+                  </tr>
+                </table>
+                  </div>
+                  <div class="state-data" id="state-data-delaware">
+                    <table>
+                    <h2>DE</h2>
+                    <tr>
+                      <th>date</th>
+                      <th>positive</th>
+                      <th>negative</th>
+                      <th>hospitalized</th>
+                      <th>death</th>
+                      <th>total</th>
+                      <th>hospitalizedIncrease</th>
+                    </tr>
+                    <tr>
+                    <td>20200331</td>
+                    <td>406</td>
+                      <td>3696</td>
+                      <td>64</td>
+                      <td>10</td>
+                      <td>4102</td>
+                      <td>19</td>
+                    </tr>
+                  </table>
+                    </div>
+                    <div class="state-data" id="state-data-florida">
+                      <table>
+                      <h2>FL</h2>
+                      <tr>
+                        <th>date</th>
+                        <th>positive</th>
+                        <th>negative</th>
+                        <th>hospitalized</th>
+                        <th>death</th>
+                        <th>total</th>
+                        <th>hospitalizedIncrease</th>
+                      </tr>
+                      <tr>
+                      <td>20200331</td>
+                      <td>6338</td>
+                        <td>54285</td>
+                        <td>823</td>
+                        <td>77</td>
+                        <td>61786</td>
+                        <td>171</td>
+                      </tr>
+                    </table>
+                      </div>
+                      <div class="state-data" id="state-data-georgia">
+                        <table>
+                        <h2>GA</h2>
+                        <tr>
+                          <th>date</th>
+                          <th>positive</th>
+                          <th>negative</th>
+                          <th>hospitalized</th>
+                          <th>death</th>
+                          <th>total</th>
+                          <th>hospitalizedIncrease</th>
+                        </tr>
+                        <tr>
+                        <td>20200331</td>
+                        <td>3929</td>
+                          <td>12252</td>
+                          <td>833</td>
+                          <td>111</td>
+                          <td>16181</td>
+                          <td>126</td>
+                        </tr>
+                      </table>
+                        </div>
+                        <div class="state-data" id="state-data-hawaii">
+                          <table>
+                          <h2>HI</h2>
+                          <tr>
+                            <th>date</th>
+                            <th>positive</th>
+                            <th>negative</th>
+                            <th>hospitalized</th>
+                            <th>death</th>
+                            <th>total</th>
+                            <th>hospitalizedIncrease</th>
+                          </tr>
+                          <tr>
+                          <td>20200331</td>
+                          <td>204</td>
+                            <td>8471</td>
+                            <td>12</td>
+                            <td>0</td>
+                            <td>8686</td>
+                            <td>0</td>
+                          </tr>
+                        </table>
+                          </div>
+                          <div class="state-data" id="state-data-iowa">
+                            <table>
+                            <h2>IA</h2>
+                            <tr>
+                              <th>date</th>
+                              <th>positive</th>
+                              <th>negative</th>
+                              <th>hospitalized</th>
+                              <th>death</th>
+                              <th>total</th>
+                              <th>hospitalizedIncrease</th>
+                            </tr>
+                            <tr>
+                            <td>20200331</td>
+                            <td>497</td>
+                              <td>6888</td>
+                              <td>94</td>
+                              <td>7</td>
+                              <td>7385</td>
+                              <td>20</td>
+                            </tr>
+                          </table>
+                            </div>
+                            <div class="state-data" id="state-data-idaho">
+                              <table>
+                              <h2>ID</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>415</td>
+                                <td>5297</td>
+                                <td>45</td>
+                                <td>7</td>
+                                <td>5712</td>
+                                <td>6</td>
+                              </tr>
+                            </table>
+                              </div>
+                              <div class="state-data" id="state-data-illinois">
+                                <table>
+                                <h2>IL</h2>
+                                <tr>
+                                  <th>date</th>
+                                  <th>positive</th>
+                                  <th>negative</th>
+                                  <th>hospitalized</th>
+                                  <th>death</th>
+                                  <th>total</th>
+                                  <th>hospitalizedIncrease</th>
+                                </tr>
+                                <tr>
+                                <td>20200331</td>
+                                <td>5994</td>
+                                  <td>29231</td>
+                                  <td>null</td>
+                                  <td>99</td>
+                                  <td>35225</td>
+                                  <td>0</td>
+                                </tr>
+                              </table>
+                                </div>
+                                <div class="state-data" id="state-data-indiana">
+                                  <table>
+                                  <h2>IN</h2>
+                                  <tr>
+                                    <th>date</th>
+                                    <th>positive</th>
+                                    <th>negative</th>
+                                    <th>hospitalized</th>
+                                    <th>death</th>
+                                    <th>total</th>
+                                    <th>hospitalizedIncrease</th>
+                                  </tr>
+                                  <tr>
+                                  <td>20200331</td>
+                                  <td>2159</td>
+                                    <td>11214</td>
+                                    <td>null</td>
+                                    <td>49</td>
+                                    <td>13373</td>
+                                    <td>0</td>
+                                  </tr>
+                                </table>
+                                  </div>
+                                </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-washington">
+                              <table>
+                              <h2>WA</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>4896</td>
+                                <td>60566</td>
+                                <td>254</td>
+                                <td>195</td>
+                                <td>65462</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-wisconscin">
+                              <table>
+                              <h2>WI</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>1351</td>
+                                <td>17375</td>
+                                <td>337</td>
+                                <td>16</td>
+                                <td>18726</td>
+                                <td>337</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-west virginia">
+                              <table>
+                              <h2>WV</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>162</td>
+                                <td>3981</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>4143</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-wyoming">
+                              <table>
+                              <h2>WY</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>109</td>
+                                <td>1999</td>
+                                <td>17</td>
+                                <td>0</td>
+                                <td>2108</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-kansas">
+                              <table>
+                              <h2>KS</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>428</td>
+                                <td>4996</td>
+                                <td>79</td>
+                                <td>9</td>
+                                <td>5424</td>
+                                <td>13</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-kentucky">
+                              <table>
+                              <h2>KY</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>480</td>
+                                <td>6330</td>
+                                <td>null</td>
+                                <td>11</td>
+                                <td>6810</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-louisiana">
+                              <table>
+                              <h2>LA</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>5237</td>
+                                <td>33730</td>
+                                <td>1355</td>
+                                <td>239</td>
+                                <td>38967</td>
+                                <td>170</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-massachusetts">
+                              <table>
+                              <h2>MA</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>6620</td>
+                                <td>40315</td>
+                                <td>562</td>
+                                <td>89</td>
+                                <td>46935</td>
+                                <td>109</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-maryland">
+                              <table>
+                              <h2>MD</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>1660</td>
+                                <td>14868</td>
+                                <td>429</td>
+                                <td>18</td>
+                                <td>16528</td>
+                                <td>76</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-maine">
+                              <table>
+                              <h2>ME</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>303</td>
+                                <td>6088</td>
+                                <td>57</td>
+                                <td>5</td>
+                                <td>6391</td>
+                                <td>8</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-mi">
+                              <table>
+                              <h2>MI</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>7615</td>
+                                <td>11893</td>
+                                <td>null</td>
+                                <td>259</td>
+                                <td>19508</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-mn">
+                              <table>
+                              <h2>MN</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>629</td>
+                                <td>19151</td>
+                                <td>112</td>
+                                <td>12</td>
+                                <td>19780</td>
+                                <td>20</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-missouri">
+                              <table>
+                              <h2>MO</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>1327</td>
+                                <td>14614</td>
+                                <td>null</td>
+                                <td>14</td>
+                                <td>15941</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-mary">
+                              <table>
+                              <h2>MP</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>2</td>
+                                <td>null</td>
+                                <td>null</td>
+                                <td>null</td>
+                                <td>2</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-mississippi">
+                              <table>
+                              <h2>MS</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>937</td>
+                                <td>3537</td>
+                                <td>211</td>
+                                <td>20</td>
+                                <td>4474</td>
+                                <td>16</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-montana">
+                              <table>
+                              <h2>MT</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>184</td>
+                                <td>4234</td>
+                                <td>14</td>
+                                <td>4</td>
+                                <td>4418</td>
+                                <td>4</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-nc">
+                              <table>
+                              <h2>NC</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>1498</td>
+                                <td>21608</td>
+                                <td>157</td>
+                                <td>8</td>
+                                <td>23106</td>
+                                <td>20</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-nd">
+                              <table>
+                              <h2>ND</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>126</td>
+                                <td>4131</td>
+                                <td>21</td>
+                                <td>3</td>
+                                <td>4257</td>
+                                <td>2</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-nebraska">
+                              <table>
+                              <h2>NE</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>172</td>
+                                <td>2931</td>
+                                <td>null</td>
+                                <td>3</td>
+                                <td>3111</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-nh">
+                              <table>
+                              <h2>NH</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>314</td>
+                                <td>5413</td>
+                                <td>45</td>
+                                <td>3</td>
+                                <td>5792</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-nj">
+                              <table>
+                              <h2>NJ</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>18696</td>
+                                <td>27077</td>
+                                <td>null</td>
+                                <td>267</td>
+                                <td>45773</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-nm">
+                              <table>
+                              <h2>NM</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>281</td>
+                                <td>12246</td>
+                                <td>22</td>
+                                <td>4</td>
+                                <td>12527</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-nevada">
+                              <table>
+                              <h2>NV</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>1113</td>
+                                <td>10681</td>
+                                <td>null</td>
+                                <td>17</td>
+                                <td>11794</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-ny">
+                              <table>
+                              <h2>NY</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>75795</td>
+                                <td>129391</td>
+                                <td>15904</td>
+                                <td>1550</td>
+                                <td>205186</td>
+                                <td>2183</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-ohio">
+                              <table>
+                              <h2>OH</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>2199</td>
+                                <td>26992</td>
+                                <td>585</td>
+                                <td>55</td>
+                                <td>29191</td>
+                                <td>110</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-oklahoma">
+                              <table>
+                              <h2>OK</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>565</td>
+                                <td>1229</td>
+                                <td>177</td>
+                                <td>23</td>
+                                <td>1794</td>
+                                <td>24</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-oregon">
+                              <table>
+                              <h2>OR</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>690</td>
+                                <td>13136</td>
+                                <td>154</td>
+                                <td>18</td>
+                                <td>13826</td>
+                                <td>14</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-pennsylvania">
+                              <table>
+                              <h2>PA</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>4843</td>
+                                <td>37645</td>
+                                <td>514</td>
+                                <td>63</td>
+                                <td>42488</td>
+                                <td>128</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-puerto rico">
+                              <table>
+                              <h2>PR</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>239</td>
+                                <td>1195</td>
+                                <td>null</td>
+                                <td>8</td>
+                                <td>2288</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-ri">
+                              <table>
+                              <h2>RI</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>488</td>
+                                <td>3476</td>
+                                <td>59</td>
+                                <td>8</td>
+                                <td>3964</td>
+                                <td>18</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-sc">
+                              <table>
+                              <h2>SC</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>1083</td>
+                                <td>4616</td>
+                                <td>259</td>
+                                <td>22</td>
+                                <td>5699</td>
+                                <td>130</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-sd">
+                              <table>
+                              <h2>SD</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>108</td>
+                                <td>3609</td>
+                                <td>12</td>
+                                <td>1</td>
+                                <td>3717</td>
+                                <td>12</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-tennessee">
+                              <table>
+                              <h2>TN</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>2239</td>
+                                <td>25121</td>
+                                <td>175</td>
+                                <td>23</td>
+                                <td>27360</td>
+                                <td>27</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-texas">
+                              <table>
+                              <h2>TX</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>3266</td>
+                                <td>39726</td>
+                                <td>196</td>
+                                <td>41</td>
+                                <td>42992</td>
+                                <td>196</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-utah">
+                              <table>
+                              <h2>UT</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>887</td>
+                                <td>17626</td>
+                                <td>73</td>
+                                <td>5</td>
+                                <td>18513</td>
+                                <td>73</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-virginia">
+                              <table>
+                              <h2>VA</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>1250</td>
+                                <td>12151</td>
+                                <td>165</td>
+                                <td>27</td>
+                                <td>13401</td>
+                                <td>29</td>
+                              </tr>
+                            </table>
+                              </div>
+                              <div class="state-data" id="state-data-vermont">
+                              <table>
+                              <h2>VT</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>293</td>
+                                <td>3957</td>
+                                <td>36</td>
+                                <td>13</td>
+                                <td>4250</td>
+                                <td>18</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-washington">
+                              <table>
+                              <h2>WA</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>4896</td>
+                                <td>60566</td>
+                                <td>254</td>
+                                <td>195</td>
+                                <td>65462</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-wisconsin">
+                              <table>
+                              <h2>WI</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>1351</td>
+                                <td>17375</td>
+                                <td>337</td>
+                                <td>16</td>
+                                <td>18726</td>
+                                <td>337</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-wv">
+                              <table>
+                              <h2>WV</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>162</td>
+                                <td>3981</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>4143</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+                              </div>
+
+                              <div class="state-data" id="state-data-wyoming">
+                              <table>
+                              <h2>WY</h2>
+                              <tr>
+                                <th>date</th>
+                                <th>positive</th>
+                                <th>negative</th>
+                                <th>hospitalized</th>
+                                <th>death</th>
+                                <th>total</th>
+                                <th>hospitalizedIncrease</th>
+                              </tr>
+                              <tr>
+                              <td>20200331</td>
+                              <td>109</td>
+                                <td>1999</td>
+                                <td>17</td>
+                                <td>0</td>
+                                <td>2108</td>
+                                <td>0</td>
+                              </tr>
+                            </table>
+  </div>
+</div>
+
+                            <div class="container">
+                              <!-- Example row of columns -->
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <h2>What is Covid-19?</h2>
+                                  <p>Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
+                                    The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing.  </p>
+                                  <p><a class="btn btn-secondary" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" role="button">View details &raquo;</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                  <h3>What to do to stay protected?</h3>
+                                  <li>Everyone must wash their hands often, for at least 20 seconds with soap and water.</li>
+                                  <li>Do not touch your face or eyes!</li>
+                                  <li>Wipe down surfaces, especially steel and others that are frequently touched</li>
+                                  <li>Self-Quarantine and stay at least 6 feet away from a person</li>
+                                  <li>When outside try to wear cloth over your mouth(N-95 mask).</li>
+
+                                </div>
+                                <div class="col-md-4">
+                                  <h2>Reliable News Source on Covid-19</h2>
+                                  <p>It is important that all people are global citizens and get the most accurate information. We must all understand our role in trying to stop this virus's spread.</p>
+                                  <p><a class="btn btn-secondary" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports" role="button">View details &raquo;</a></p>
+                                </div>
+                              </div>
+
+                              <hr>
+
+                            </div> <!-- /container -->
+
+
+    <script>
+    $('#state-selector').change(function() {
+      let selectedState = $(this).val();
+      let dataId = `state-data-${selectedState.toLowerCase()}`;
+
+      $('.state-data').hide();
+      $(`#${dataId}`).show();
+    });
+  </script>
+  <footer class="container">
+    <p>&copy; Satchmo & keith Company 2017-2018</p>
+  </footer>
+  </body>
+  </html>

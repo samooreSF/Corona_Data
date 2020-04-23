@@ -1,0 +1,25 @@
+{
+  "name": "Corona_Data",
+  "version": "1.0.0",
+  "description": "Database on Local Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samooreSF/Corona_Data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samooreSF/Corona_Data/issues"
+  },
+  "homepage": "https://github.com/samooreSF/Corona_Data#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security"
+  }
+}
